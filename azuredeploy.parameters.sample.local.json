@@ -1,75 +1,57 @@
 {
-	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-	"contentVersion": "1.0.0.0",
-	"parameters": {
-		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/Microsoft/openshift-origin/master"
-		},
-		"masterVmSize": {
-			"value": "Standard_D4s_v3"
-		},
-		"infraVmSize": {
-			"value": "Standard_D4s_v3"
-		},
-		"nodeVmSize": {
-			"value": "Standard_D4s_v3"
-		},
-		"storageKind": {
-			"value": "managed"
-		},
-		"openshiftClusterPrefix": {
-			"value": "mycluster"
-		},
-		"masterInstanceCount": {
-			"value": 3
-		},
-		"infraInstanceCount": {
-			"value": 3
-		},
-		"nodeInstanceCount": {
-			"value": 2
-		},
-		"dataDiskSize": {
-			"value": 128
-		},
-		"adminUsername": {
-			"value": "azureuser"
-		},
-		"openshiftPassword": {
-			"value": "ThisIsYourSampleSecret!ShouldStayLocal!"
-		},
-		"enableMetrics": {
-			"value": "true"
-		},
-		"enableLogging": {
-			"value": "false"
-		},
-		"sshPublicKey": {
-			"value": "ssh-rsa AAAAB3...Public...Key...You...Created...In...Prep...Steps...swXg5szN"
-		},
-		"keyVaultResourceGroup": {
-			"value": "OpenShiftRG1"
-		},
-		"keyVaultName": {
-			"value": "OpenShiftKV"
-		},
-		"keyVaultSecret": {
-			"value": "OpenShiftPK1"
-		},
-		"enableAzure": {
-			"value": "true"
-		},
-		"aadClientId": {
-			"value": "ThisIsYourAzureADServicePrincipalClientID"
-		},
-		"aadClientSecret": {
-			"value": "ThisIsYourAzureADServicePrincipalClientSecret"
-		},
-		"defaultSubDomainType": {
-			"value": "nipio"
-		},
-		"defaultSubDomain": {
-			"value": "domain-name-all-lowercase-if-custom-used.com"
-		}
-	}
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "masterVmSize": {
+            "value": "Standard_E2s_v3"
+        },
+        "infraVmSize": {
+            "value": "Standard_E2s_v3"
+        },
+        "nodeVmSize": {
+            "value": "Standard_E2s_v3"
+        },
+        "openshiftClusterPrefix": {
+            "value": "mycluster"
+        },
+        "masterInstanceCount": {
+            "value": 3
+        },
+        "infraInstanceCount": {
+            "value": 2
+        },
+        "nodeInstanceCount": {
+            "value": 2
+        },
+        "dataDiskSize": {
+            "value": 128
+        },
+        "adminUsername": {
+            "value": "clusteradmin"
+        },
+        "openshiftPassword": {
+            "value": "Sowmya@2018"
+        },
+        "sshPublicKey": {
+            "value": "{SSH Public Key}"
+        },
+        "keyVaultResourceGroup": {
+            "value": "keyvaultrg"
+        },
+        "keyVaultName": {
+            "value": "openshiftkeyvault1"
+        },
+        "keyVaultSecret": {
+            "value": "keysecret"
+        },
+        "aadClientId": {
+            "value": "5f783bf4-4747-4081-9d58-8f119070b428"
+        },
+        "aadClientSecret": {
+            "value": "Suvimani@1940"
+        },
+        "defaultSubDomainType": {
+            "value": "nipio"
+        }
+    }
 }
